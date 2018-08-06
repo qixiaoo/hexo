@@ -7,6 +7,8 @@ tags: JavaScript
 
 最近想给自己的阅读器加上注释的功能，一番折腾之后发现 [Rangy](https://github.com/timdown/rangy)  这个好用的库。使用这个库可以便捷地实现获取和保存文本选取，以及对文本选取添加样式等功能。下面让我们来初步了解一下它的用法，更详细的内容可以查阅它的文档 [Here](https://github.com/timdown/rangy/wiki) 。
 
+<!-- more -->
+
 &nbsp;
 
 ## Selection 和 Range 对象

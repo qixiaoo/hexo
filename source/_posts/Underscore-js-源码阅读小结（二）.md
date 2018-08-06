@@ -19,6 +19,8 @@ ECMAScript 5 提供了两个归并数组的方法：`reduce()` 和 `reduceRight(
 * currentIndex 数组中正在处理的元素索引，如果提供了 initialValue ，从0开始；否则从1开始
 * array 调用 reduce 的数组
 
+<!-- more -->
+
 让我们通过下面数组求和的示例理解 reduce() 函数：
 
 ```js
