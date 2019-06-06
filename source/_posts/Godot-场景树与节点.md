@@ -80,13 +80,9 @@ sprite.texture = texture
 
 下面是一些 `SceneTree ` 可能会比较频繁地用到的 API。
 
-&nbsp;
-
 `root` 和 `current_scene` 属性。作用见上文。
 
-&nbsp;
-
-`pause` 属性。`pause` 属性是布尔类型变量，使用它可以比较轻松地实现[暂停游戏](<https://docs.godotengine.org/zh_CN/latest/tutorials/misc/pausing_games.html>)的功能。当将 `SceneTree` 的 `pause` 属性设置为 `true` 时，场景将会暂停物理模拟、事件处理以及 `_process/_physics_process` 回调。结合暂停白名单节点，可以实现自由暂停和回复游戏。
+`pause` 属性。`pause` 属性是布尔类型变量，使用它可以比较轻松地实现[暂停游戏](<https://docs.godotengine.org/zh_CN/latest/tutorials/misc/pausing_games.html>)的功能。当将 `SceneTree` 的 `pause` 属性设置为 `true` 时，场景将会暂停物理模拟、事件处理以及 `_process/_physics_process` 回调。结合暂停白名单节点，可以实现自由暂停和恢复游戏。
 
 ```
 get_tree().paused = true
@@ -110,9 +106,7 @@ Variant call_group_flags( int flags, String group, String method, ... )
 
 &nbsp;
 
-与上面这一对方法类似的还有 `notify_group()` / `notify_group_flags()`，`set_group()` / `set_group_flags()`。它们的作用分别是向组内节点发出通知和设置组内节点的属性值。
-
-其它与组相关的方法还有 `get_nodes_in_group()` / `has_group()`，分别用于获取组内节点和判断某个组是否存在。
+与上面这一对方法类似的还有 `notify_group()` / `notify_group_flags()`，`set_group()` / `set_group_flags()`。它们的作用分别是向组内节点发出通知和设置组内节点的属性值。其它与组相关的方法还有 `get_nodes_in_group()` / `has_group()`，分别用于获取组内节点和判断某个组是否存在。
 
 &nbsp;
 
@@ -200,8 +194,6 @@ get_tree().root.print_tree_pretty()
 &nbsp;
 
 `pause_mode` 属性规定了当节点所属的 `SceneTree` 的 `pause` 属性设置为 `true` 之后节点自身的行为。此值默认为 `PAUSE_MODE_INHERIT`，表示节点随场景树一起暂停。当此值为 `PAUSE_MODE_STOP` 时，表示无论什么情况，节点都暂停。当此值为 `PAUSE_MODE_PROCESS` 时，表示无论什么情况，节点都不暂停。
-
-&nbsp;
 
 `_enter_tree()` / `_exit_tree()` / `_ready()` / `_process()` / `_input()`，生命周期内的各种方法，在合适的时候被调用。
 
