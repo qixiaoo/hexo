@@ -3,10 +3,10 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: bubble-Q
+title: Qin's Personal Blog
 subtitle: 起始之地
 description:
-author: bubble-Q
+author: Qin
 language: zh-CN
 timezone: Asia/Shanghai
 
@@ -64,10 +64,11 @@ pagination_dir: page
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
 theme: next
+theme_config: _next_theme_config.yml
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: https://github.com/bubble-Q/bubble-Q.github.io.git
+  repo: https://github.com/qixiaoo/qixiaoo.github.io.git
   branch: master
